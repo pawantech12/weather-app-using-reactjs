@@ -58,13 +58,14 @@ const App = () => {
   }, [showWeather]);
 
   return (
-    <div>
+    <div className="bg-custom-grey-dark flex flex-col items-center">
       {!showWeather ? (
         <HomeScreen onStart={() => setShowWeather(true)} />
       ) : (
-        <div className="flex flex-col items-center min-h-screen bg-custom-grey-dark">
+        <div className="flex flex-col w-3/5 items-center min-h-screen ">
           <SearchBar onSearch={fetchWeather} />
-          <Hero weatherData={weatherData} />
+          {weatherData && <Hero weatherData={weatherData} />}
+
           <ErrorMessage message={error} />
           {weatherData && <WeatherDisplay weatherData={weatherData} />}
         </div>

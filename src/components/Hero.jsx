@@ -25,7 +25,7 @@ export const Hero = ({ weatherData }) => {
     }
   };
   return (
-    <section className="flex justify-evenly items-center w-11/12">
+    <section className="flex justify-around items-center w-full">
       <div className="flex flex-col">
         <h2 className="text-3xl font-bold text-white mb-2">
           {weatherData?.name}

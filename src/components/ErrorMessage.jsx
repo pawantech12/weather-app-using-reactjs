@@ -4,7 +4,7 @@ const ErrorMessage = ({ message }) => {
   if (!message) return null;
 
   return (
-    <div className="text-center text-red-500 mt-4">
+    <div className="text-center text-white text-lg font-medium bg-custom-grey-light mt-4 w-full py-2 rounded-lg ">
       <p>{message}</p>
     </div>
   );
