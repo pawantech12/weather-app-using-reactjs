@@ -50,7 +50,7 @@ const App = () => {
   };
 
   const handleError = (error) => {
-    setError("Unable to retrieve your location.");
+    setError("Unable to retrieve your location.", error);
   };
 
   useEffect(() => {
