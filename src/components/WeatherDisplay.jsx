@@ -11,7 +11,7 @@ const WeatherDisplay = ({ weatherData }) => {
     return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
   };
   return (
-    <div className="rounded-lg p-6 w-full mx-auto mt-5 grid gap-5 grid-cols-3">
+    <div className="rounded-lg p-6 w-full mx-auto mt-5 grid gap-5 grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
       <div className="bg-custom-grey-light p-5 rounded-lg">
         <span className="flex items-center gap-2 text-gray-400 font-medium">
           <FaTemperatureQuarter className="text-xl" />

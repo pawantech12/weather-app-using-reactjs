@@ -3,10 +3,10 @@ import HomeImg from "../img/umbrella.png";
 const HomeScreen = ({ onStart }) => {
   return (
     <section className="flex items-center justify-evenly min-h-screen bg-custom-grey-dark py-10">
-      <div className="w-2/5 bg-custom-grey-light rounded-xl p-8">
+      <div className="w-2/5 bg-custom-grey-light rounded-xl p-8 max-lg:hidden">
         <img src={HomeImg} alt="Home Screen Img" />
       </div>
-      <div className="flex w-2/5 flex-col items-center gap-2 text-center">
+      <div className="flex w-2/5 flex-col items-center gap-2 text-center max-lg:w-3/4">
         <figure className="w-16">
           <img src={HomeImg} alt="Home Screen Img" />
         </figure>

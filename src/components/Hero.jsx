@@ -25,7 +25,7 @@ export const Hero = ({ weatherData }) => {
     }
   };
   return (
-    <section className="flex justify-around items-center w-full">
+    <section className="flex justify-evenly items-center w-full">
       <div className="flex flex-col">
         <h2 className="text-3xl font-bold text-white mb-2">
           {weatherData?.name}
@@ -33,7 +33,7 @@ export const Hero = ({ weatherData }) => {
         <span className="text-gray-400 font-medium">
           {weatherData?.weather?.[0]?.main}
         </span>
-        <span className="text-4xl font-bold text-white mt-5">
+        <span className="text-4xl font-bold text-white mt-5 max-sm:text-3xl">
           {weatherData?.main?.temp}°C
         </span>
       </div>
@@ -41,7 +41,7 @@ export const Hero = ({ weatherData }) => {
         <img
           src={getWeatherIcon(weatherData?.weather?.[0]?.main)}
           alt=""
-          className="w-60"
+          className="w-60 max-sm:w-44"
         />
       </div>
     </section>

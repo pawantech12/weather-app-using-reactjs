@@ -62,7 +62,7 @@ const App = () => {
       {!showWeather ? (
         <HomeScreen onStart={() => setShowWeather(true)} />
       ) : (
-        <div className="flex flex-col w-3/5 items-center min-h-screen ">
+        <div className="flex flex-col w-3/5 items-center min-h-screen max-lg:w-11/12">
           <SearchBar onSearch={fetchWeather} />
           {weatherData && <Hero weatherData={weatherData} />}
 
